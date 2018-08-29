@@ -46,8 +46,14 @@
     color: white;
 }
 
+.my {
+    border-radius: 8px 0 8px 8px;
+    background-image: linear-gradient(to left, #ff7a2f, #ff6032);
+    color: white;
+}
+
 .suggestion {
-    border-radius: 8px;
+    border-radius: 0 8px 8px 8px;
     background: #f1f1f1;
     color: black;
 }

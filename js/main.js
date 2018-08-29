@@ -95,7 +95,9 @@ function onFinishRecord(audioURL) {
             }
           }),
           success: function(data) {
-            $.get('http://toast.run.goorm.io/?content=' + encodeURI(data.results[0].alternatives[0].transcript) + '&userid=a', function(result) {
+            let question = data.results[0].alternatives[0].transcript;
+            $('#chats').append('<div class="chat my">' + question + '</div>');
+            $.get('http://toast.run.goorm.io/?content=' + encodeURI(question) + '&userid=a', function(result) {
               console.log(result);
               $('#chats').append('<div class="chat suggestion">' + result + '</div>');
             });
