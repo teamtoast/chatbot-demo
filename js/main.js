@@ -95,7 +95,10 @@ function onFinishRecord(audioURL) {
             }
           }),
           success: function(data) {
-            $('#chats').append('<div class="chat suggestion">' + data.results[0].alternatives[0].transcript + '</div>')
+            $.get('http://toast.run.goorm.io/?content=' + encodeURI(data.results[0].alternatives[0].transcript) + '&userid=a', function(result) {
+              console.log(result);
+              $('#chats').append('<div class="chat suggestion">' + result + '</div>');
+            });
           },
           contentType: "application/json",
           dataType: "json"
