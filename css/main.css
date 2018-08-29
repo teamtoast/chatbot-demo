@@ -1,0 +1,57 @@
+#wrapper {
+    width: 320px;
+}
+
+#toast {
+    height: 42px;
+    font-size: 33.6px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff6032;
+    margin: 0;
+    text-align: center;
+}
+
+#chatbot {
+    height: 27px;
+    font-size: 21.7px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff6032;
+    margin: 0;
+    text-align: center;
+}
+
+#line {
+    width: 320px;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.chat {
+    padding: 7px 16px 9px 16px;
+    font-size: 16px;
+    margin: 8px
+}
+
+.bot {
+    border-radius: 0 8px 8px 8px;
+    background-image: linear-gradient(to left, #ff7a2f, #ff6032);
+    color: white;
+}
+
+.suggestion {
+    border-radius: 8px;
+    background: #f1f1f1;
+    color: black;
+}
+
+#chats {
+    padding: 10px;
+}
